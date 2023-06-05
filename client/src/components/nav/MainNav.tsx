@@ -6,19 +6,24 @@ const NavWrapper = styled.div`
   height: 100%;
   margin-left: 40px;
 `;
+const NavStyle = styled(NavLink)`
+  > div {
+    margin: 15px 0px;
+  }
+`;
 
 function MainNav() {
   return (
     <NavWrapper>
-      <NavLink to='/community'>
+      <NavStyle to='/community'>
         <div>COMMUNITY</div>
-      </NavLink>
-      <NavLink to='/shoppingmall'>
+      </NavStyle>
+      <NavStyle to='/shoppingmall'>
         <div>SHOPPINGMALL</div>
-      </NavLink>
-      <NavLink to='/users'>
+      </NavStyle>
+      <NavStyle to='/users'>
         <div>USERS</div>
-      </NavLink>
+      </NavStyle>
     </NavWrapper>
   );
 }
