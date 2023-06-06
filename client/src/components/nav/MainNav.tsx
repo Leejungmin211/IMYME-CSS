@@ -4,11 +4,19 @@ import styled from 'styled-components';
 const NavWrapper = styled.div`
   width: 150px;
   height: 100%;
-  margin-left: 40px;
+  margin: 60px 0px 0px 40px;
 `;
 const NavStyle = styled(NavLink)`
-  > div {
-    margin: 15px 0px;
+  > p {
+    margin: 30px 0px;
+    color: var(--brand-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+    &:hover {
+      text-decoration-line: underline;
+      text-decoration-color: var(--accent-color);
+      text-decoration-thickness: 5px;
+    }
   }
 `;
 
@@ -16,13 +24,13 @@ function MainNav() {
   return (
     <NavWrapper>
       <NavStyle to='/community'>
-        <div>COMMUNITY</div>
+        <p>COMMUNITY</p>
       </NavStyle>
       <NavStyle to='/shoppingmall'>
-        <div>SHOPPINGMALL</div>
+        <p>SHOPPINGMALL</p>
       </NavStyle>
       <NavStyle to='/users'>
-        <div>USERS</div>
+        <p>USERS</p>
       </NavStyle>
     </NavWrapper>
   );
