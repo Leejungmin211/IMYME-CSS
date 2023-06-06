@@ -58,7 +58,7 @@ button {
     --color-gray8: #888;
     --color-darkgray: #0C2004;
     --color-black: #222;
-    --accent-color: #1dd7f0;
+    --accent-color: #74eb8b;
     /* TODO 사용법 >>> color: var(--brand-color); */
 }
 
