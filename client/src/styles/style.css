@@ -59,7 +59,7 @@ button {
     --color-darkgray: #0C2004;
     --color-black: #222;
     --accent-color: #74eb8b;
-    /* TODO 사용법 >>> color: var(--brand-color); */
+    --accent-opacity-color: #74eb8b8a;
 }
 
 body {
